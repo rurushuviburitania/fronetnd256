@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Inventario</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -14,12 +13,12 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Menu</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <div class="navbar-nav">
                         <a class="nav-link" href="inicio.html">Inicio</a>
                         <a class="nav-link" aria-current="page" href="clientes.html">Clientes</a>
@@ -27,87 +26,62 @@
                         <a class="nav-link" href="inventario.html">Inventario</a>
                         <a class="nav-link" href="pqrs.html">PQRS</a>
                     </div>
-
+                
                 </div>
             </div>
-        </nav>
+          </nav>
     </header>
-
+    
     <main class="container">
         <section class="contenedor">
             <section class="products">
                 <h2>Productos Disponibles</h2>
-                <div class="product-list">
+                <div class="product-list" id="product">
                     <div class="product">
-                        <h3>ROG Strix GeForce RTX® 4090 OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI
-                            2.1a, DisplayPort 1.4a)</h3>
-                        <img src="https://m.media-amazon.com/images/I/815d7TTP5UL._AC_UY218_.jpg"
-                            alt="Imagen de Producto 2">
-                        <p>$1,999.00</p>
+                        <h3>Nombre</h3>
+                        <img src="https://m.media-amazon.com/images/I/51c+p6RY+AL._AC_UY218_.jpg" alt="Imagen de Producto 1">
+                        <h5>Codigo</h5>
+                        <h5>Stock</h5>
+                        <h4>Precio</h4>
                         <button class="add-to-cart">Añadir al carrito</button>
+                        <!-- <h3 id="nombre">CORSAIR VENGEANCE RGB DDR5 RAM 64GB (2x32GB) 6400MHz CL32 Intel XMP iCUE Compatible Computer Memory - Black (CMH64GX5M2B6400C32)</h3>
+                        <p id="descripcion">Ingrese la descripcion</p>
+                        <p id="codigo">Ingrese el codigo</p>
+                        <p id="stock">Ingrese el stock</p>
+                        <p id="precio">Ingrese el precio</p>
+                        <p id="laboratorio">Ingrese el laboratorio</p>
+                        <p id="ima">Ingrese el imagen</p> -->
+                        
                     </div>
+
                     <div class="product">
-                        <h3>HX1500i Fully Modular Ultra-Low Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant -
-                            Fluid Dynamic Bearing Fan - CORSAIR iCUE Software Compatible - 80 Plus Platinum Efficiency -
-                            Black</h3>
-                        <img src="https://m.media-amazon.com/images/I/817diqXXPgL._AC_UY218_.jpg"
-                            alt="Imagen de Producto 4">
-                        <p>$359.98</p>
+                        <h3 id="nombre">CORSAIR VENGEANCE RGB DDR5 RAM 64GB (2x32GB) 6400MHz CL32 Intel XMP iCUE Compatible Computer Memory - Black (CMH64GX5M2B6400C32)</h3>
+                        <p id="descripcion">Ingrese la descripcion</p>
+                        <p id="codigo">Ingrese el codigo</p>
+                        <p id="stock">Ingrese el stock</p>
+                        <p id="precio">Ingrese el precio</p>
+                        <p id="laboratorio">Ingrese el laboratorio</p>
+                        <p id="ima">Ingrese el imagen</p>
+                        <img src="https://m.media-amazon.com/images/I/51c+p6RY+AL._AC_UY218_.jpg" alt="Imagen de Producto 1">
+                        <p>$270.00</p>
                         <button class="add-to-cart">Añadir al carrito</button>
+                        <tbody id="inventario-tablee">
+                        </tbody>
                     </div>
+
+                    
                     <div class="product">
-                        <h3>ASUS ROG Ryujin III 360 ARGB All-in-one Liquid CPU Cooler with 360mm Radiator. Asetek 8th
-                            gen Pump, 3X Magnetic 120mm ARGB Fans (Daisy Chain Design), 3.5” LCD Display</h3>
-                        <img src="https://m.media-amazon.com/images/I/81i8DvqAD8L._AC_UY218_.jpg"
-                            alt="Imagen de Producto 5">
-                        <p>$349.99</p>
-                        <button class="add-to-cart">Añadir al carrito</button>
-                    </div>
-                    <div class="product">
-                        <h3>ASUS ROG Crosshair X670E Hero AMD X670 AM5 Ryzen™ Desktop 9000 8000 & 7000 ATX Motherboard,
-                            18 + 2 Power Stages, PCIe® 5.0, DDR5, 5X M.2 Slots, USB 3.2 Gen 2x2 with Quick Charge 4+,
-                            USB4®, Wi-Fi 6E</h3>
-                        <img src="https://m.media-amazon.com/images/I/814lhQLoSKL._AC_UY218_.jpg"
-                            alt="Imagen de Producto 6">
-                        <p>$605.91</p>
-                        <button class="add-to-cart">Añadir al carrito</button>
-                    </div>
-                    <div class="product">
-                        <h3>AMD Ryzen™ 9 7900X3D 12-Core, 24-Thread Desktop Processor</h3>
-                        <img src="https://m.media-amazon.com/images/I/51fRtv4UyBL._AC_UY218_.jpg"
-                            alt="Imagen de Producto 7">
-                        <p>$449.00</p>
-                        <button class="add-to-cart">Añadir al carrito</button>
-                    </div>
-                    <div class="product">
-                        <h3>Thermal Grizzly
-                            Kryonaut Extreme - 2 Gram - Extremly High Performance Thermal Paste - for Maximum Thermal
-                            Conductivity While Overclocking CPU/GPU/PS4/PS5/Xbox</h3>
-                        <img src="https://m.media-amazon.com/images/I/71V+HU5Nw0S._AC_UY218_.jpg"
-                            alt="Imagen de Producto 8">
-                        <p>$21.99</p>
-                        <button class="add-to-cart">Añadir al carrito</button>
-                    </div>
-                    <div class="product">
-                        <h3>msi
-                            Stealth 16 AI Studio 16” 120Hz MiniLED Gaming Laptop: Intel Core Ultra 9, NVIDIA Geforce RTX
-                            4090, 64GB DDR5, 2TB NVMe SSD, Thunderbolt 4, Cooler Boost Trinity+, Win 11 PRO: Star Blue
-                            A1VIG-026US</h3>
-                        <img src="https://m.media-amazon.com/images/I/71cWXOi88TL._AC_UY218_.jpg"
-                            alt="Imagen de Producto 11">
-                        <p>$4,099.00</p>
-                        <button class="add-to-cart">Añadir al carrito</button>
-                    </div>
-                    <div class="product">
-                        <section class="contenedor">
+                        <section class="container">
                             <table class="table">
                                 <thead>
                                     <tr class="table-dark">
-                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Producto</th>
                                         <th scope="col">Descripción</th>
+                                        <th scope="col">Código</th>
                                         <th scope="col">Stock</th>
                                         <th scope="col">Precio</th>
                                         <th scope="col">Laboratorio</th>
+                                        <th scope="col">Imagen</th>
                                         <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
@@ -116,9 +90,12 @@
                             </table>
                         </section>
                     </div>
+
+                    
+
                 </div>
             </section>
-
+        
             <section class="cart">
                 <h2>Tu Carrito</h2>
                 <ul id="cart-items">
@@ -128,24 +105,37 @@
                 <button id="pay-cart" class="action-btn">Pagar</button>
                 <button id="cancel-cart" class="action-btn">Cancelar</button>
             </section>
-
-
-
-
-
         </section>
-
-
     </main>
 
-
+    <!-- <section class="container">
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">Producto</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Código</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Laboratorio</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="inventario-table">
+            </tbody>
+        </table>
+    </section> -->
 
     <script src="js/request.js"></script>
     <script src="js/inventario.js"></script>
+    
     <script>
-        window.onload = function () {
-            mostrarProductos();
-        }
+        window.onload = function() {
+        // Llama a la función que carga todos los productos al cargar la página
+        mostrarProductos();
+        
+    }
     </script>
 
     <footer class="footer">
@@ -154,3 +144,11 @@
 </body>
 
 </html>
+
+
+<!-- <div class="product">
+    <h3>CORSAIR VENGEANCE RGB DDR5 RAM 64GB (2x32GB) 6400MHz CL32 Intel XMP iCUE Compatible Computer Memory - Black (CMH64GX5M2B6400C32)</h3>
+    <img src="https://m.media-amazon.com/images/I/51c+p6RY+AL._AC_UY218_.jpg" alt="Imagen de Producto 1">
+    <p>$270.00</p>
+    <button class="add-to-cart">Añadir al carrito</button>
+</div> -->
